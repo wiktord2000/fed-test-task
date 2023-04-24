@@ -2,7 +2,7 @@
   <app-category-card
     *ngFor="let category of categories; let even = even"
     [category]="category"
-    [imgPosition]="even ? 'top' : 'bottom'"
+    [imgPosition]="!even && !(isMobile$ | async) ? 'bottom' : 'top'"
     [isLiked]="!even"
   ></app-category-card>
 </div>
