@@ -1,1 +1,9 @@
-<p>category-card works!</p>
+<div class="content">
+  <img class="category-img" [src]="category.imgURL" [alt]="category.altText" />
+  <div class="title">{{ category.title }}</div>
+  <div class="subtitle">{{ category.subtitle }}</div>
+  <a [href]="category.href" target="_blank" class="link"
+    >{{ category.link }}
+    <span class="material-symbols-outlined"> arrow_right_alt </span></a
+  >
+</div>

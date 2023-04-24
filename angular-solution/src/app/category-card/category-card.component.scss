@@ -1,0 +1,18 @@
+@import "constants";
+
+.content {
+  text-align: center;
+  padding: 16px;
+  border: 1px black solid;
+  max-width: $max-content-width/3;
+
+  .category-img {
+    width: auto;
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
