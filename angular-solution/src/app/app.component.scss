@@ -1,0 +1,20 @@
+@import "constants";
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories-container {
+  display: flex;
+  max-width: $max-content-width;
+  overflow: auto;
+  margin: 20px 0px;
+}
+
+@media (max-width: $mobile-breakpoint) {
+  .categories-container {
+    flex-direction: column;
+  }
+}

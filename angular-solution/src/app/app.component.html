@@ -1,1 +1,8 @@
-<app-category-card [category]="categories[0]"></app-category-card>
+<div class="categories-container">
+  <app-category-card
+    *ngFor="let category of categories; let even = even"
+    [category]="category"
+    [imgPosition]="even ? 'top' : 'bottom'"
+    [isLiked]="!even"
+  ></app-category-card>
+</div>
