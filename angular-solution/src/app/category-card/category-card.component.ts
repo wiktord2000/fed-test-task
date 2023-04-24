@@ -8,4 +8,5 @@ import { Category } from '../types';
 })
 export class CategoryCardComponent {
   @Input() category!: Category;
+  @Input() imgPosition: 'top' | 'bottom' = 'top';
 }
