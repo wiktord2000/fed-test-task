@@ -4,7 +4,7 @@
   <div class="content">
     <div class="title">{{ category.title }}</div>
     <div class="subtitle">{{ category.subtitle }}</div>
-    <a [href]="category.href" target="_blank" class="link"
+    <a class="link flex-center-xy" [href]="category.href" target="_blank"
       >{{ category.link }}
       <span class="material-symbols-outlined arrow-right-icon">
         arrow_right_alt
@@ -21,7 +21,11 @@
         [src]="category.imgURL"
         [alt]="category.altText"
       />
-      <img class="icon" src="assets/icons/heart.png" />
+      <img
+        [ngClass]="{ 'like-icon': true, liked: isLiked }"
+        (click)="onLikeClick()"
+        src="assets/icons/heart.png"
+      />
     </div>
   </ng-template>
 </div>

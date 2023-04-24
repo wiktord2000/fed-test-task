@@ -9,4 +9,9 @@ import { Category } from '../types';
 export class CategoryCardComponent {
   @Input() category!: Category;
   @Input() imgPosition: 'top' | 'bottom' = 'top';
+  @Input() isLiked: boolean = true;
+
+  onLikeClick() {
+    this.isLiked = !this.isLiked;
+  }
 }
