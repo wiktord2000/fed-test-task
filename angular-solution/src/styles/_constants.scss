@@ -1,3 +1,4 @@
+// General
 $default-fonts: Roboto, "Helvetica Neue", sans-serif;
 $max-content-width: 1200px;
 $main-font-color: rgba(0, 0, 0, 0.6);
@@ -5,5 +6,8 @@ $main-font-color: rgba(0, 0, 0, 0.6);
 $title-font-size: 21px;
 $subtitle-font-size: 16px;
 $link-font-size: 14px;
-// Color
+// Colors
 $link-color: #cd9e53;
+$like-color: lightcoral;
+// Media queries
+$mobile-breakpoint: 500px;
