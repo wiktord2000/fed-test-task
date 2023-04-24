@@ -6,13 +6,31 @@
   border: 1px black solid;
   max-width: $max-content-width/3;
 
-  .category-img {
-    width: auto;
-  }
-}
+  .img-container {
+    position: relative;
 
-.link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    .category-img {
+      width: 100%;
+    }
+
+    .icon {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      width: 20px;
+      background-color: white;
+      padding: 4px;
+      border-radius: 50%;
+    }
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link:hover .arrow-right-icon {
+    transform: translateX(2px);
+  }
 }
